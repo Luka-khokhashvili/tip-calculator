@@ -27,17 +27,20 @@ function InputSection(props) {
 function TipSelection(props) {
   return (
     <div className="tip-selection-body">
-      <TipButton amount={5} />
-      <TipButton amount={10} />
-      <TipButton amount={15} />
-      <TipButton amount={25} />
-      <TipButton amount={50} />
-      <input
-        type="number"
-        name="custom-amount"
-        className="custom-amount"
-        placeholder="Custom"
-      />
+      <p className="tip-selection-title">Select Tip %</p>
+      <div className="tip-selection-grid">
+        <TipButton amount={5} />
+        <TipButton amount={10} />
+        <TipButton amount={15} />
+        <TipButton amount={25} />
+        <TipButton amount={50} />
+        <input
+          type="number"
+          name="custom-amount"
+          className="custom-amount"
+          placeholder="Custom"
+        />
+      </div>
     </div>
   );
 }
